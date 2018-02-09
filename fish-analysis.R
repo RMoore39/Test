@@ -8,4 +8,6 @@ fish_data %>%
 
 fish_data_cat %>% filter(scalelength >= 1) -> fish_data_cat
 
+fish_data_cat %>% filter(annnumber == "EDGE")
+
 ggplot(fish_data_cat) + geom_point(aes(y = scalelength, x = length, color = lakeid))
